@@ -8,7 +8,7 @@
     --text-main: #f8fafc;           /* Off-white */
     --text-muted: #8a94a6;          /* Mid-tone gray */
     --border-color: #262f3d;        /* Subtle slate borders */
-	--gold-color: #D4AF37;
+    --gold-color: #D4AF37;
     --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -556,12 +556,18 @@ body {
 .form-help-text { display: block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--text-muted); }
 .form-group input:focus, .form-group textarea:focus { border-color: var(--primary-color); }
 
+/* --- REVISED FOOTER SECTION --- */
 .site-footer { 
-    background-color: var(--bg-surface); 
-    border-top: 1px solid var(--border-color); 
-    padding: 5rem 0 0 0; 
+    background-color: transparent; 
+    padding: 0; 
     position: relative; 
     z-index: 2; 
+}
+
+.footer-content-wrapper {
+    background-color: rgba(23, 29, 38, 0.4); 
+    padding: 6rem 0; 
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-grid { 
@@ -570,6 +576,9 @@ body {
     gap: 4rem; 
     padding-bottom: 4rem; 
     align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .footer-logo-wrapper { height: 90px; display: flex; align-items: flex-start; justify-content: flex-start; margin-bottom: 0; }
@@ -637,13 +646,13 @@ body {
 }
 
 .btn-gold-hover:hover {
-    background-color: #D4AF37 !important; /* Gold */
+    background-color: #D4AF37 !important;
     border-color: #D4AF37 !important;
-    color: #0b0f17 !important;            /* Dark text for contrast */
+    color: #0b0f17 !important;            
 }
 
 #my-cal-inline-30min iframe {
-    height: 600px !important; /* Adjust this value to your preference */
+    height: 600px !important; 
     min-height: 600px !important;
 }
 
